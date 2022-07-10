@@ -133,8 +133,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    /* background-color: #f0f6ff; */
-    background-color: #004fb8;
+    background-color: #f0f6ff;
+    color: #333333;
     cursor: pointer;
 }
 
@@ -153,11 +153,15 @@ table, th, td {
 }
 
 thead {
-    color: #666666;
-    /* background-color: #0063e6; */
-    background-color: #F7F7F7;
+    color: #ffffff;
+    background-color: #0063e6;
     font-size: 14px;
     font-weight: 700;
+}
+
+thead:hover {
+    color: #333333;
+    background-color: #f0f6ff;
 }
 
 th, tr {
