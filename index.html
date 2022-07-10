@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsilon UX Assignment</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CDN -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+</head>
+
+<body>
+    <!-- Part 1 - Card Component -->
+    <h1>Part 1 - Card Component</h1>
+    <div class="container">
+        <div class="card">
+            <div class="thumb"></div>
+            <div class="card-container">
+                <h2>Beach Day</h2>
+                <h3>Rufus the dog</h3>
+                <p>Modified 02/28/2019 by bfrost</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <!-- Part 2 - Form Elements -->
+    <h1>Part 2 - Form Elements</h1>
+    <div class="container">
+        <form action="#">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name">
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="form-control">
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div class="form-control">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+            </div>
+            <div class="form-control">
+                <input type="submit" value="save">
+            </div>
+        </form>
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <!-- Part 3 - Table Functions -->
+    <h1>Part 3 - Table Functions</h1>
+    <div class="table-container" ng-app="tableApp" ng-controller="tableController">
+        <table id="cookies-table">
+            <thead>
+                <tr>
+                    <th onclick="sortName();">Product Name <i class="fas fa-sort"></i></th>
+                    <th onclick="sortPrice();">Price <i class="fas fa-sort"></i></th>
+                    <th onclick="sortCat();">Category <i class="fas fa-sort"></i></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <input type="hidden" id="name_order" value="asc">
+        <input type="hidden" id="price_order" value="asc">
+        <input type="hidden" id="cat_order" value="asc">
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <script src="js/sort.js"></script>
+</body>
+
+</html>
